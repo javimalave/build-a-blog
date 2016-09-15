@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Javi's Random Thoughts</title>
+    <link REL="Stylesheet" href="stylesheets/main.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower" rel="stylesheet">
+  </head>
+<body>
+  <div class="main">
+      <h1>Javi's Random Thoughts</h1>
+        <div class="menu">
+          <ul>
+            <li><a href="/blog">Home</a></li>
+            <li><a href="/newpost">New Post</a></li>
+            <li><a href="/archives">Archives</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          {% block content %}
+          {% endblock %}
+          {% for blog in blogs %}
+
+            <div class="blog">
+              <a href="/blog/{{blog.key().id()}}"><div class="blog-title">{{blog.title}}</div></a>
+              <div class="blog-body">{{blog.content}}</div>
+              <hr>
+            </div>
+        {% endfor %}
+        {% if posts %}
+
+            <div class="blog-title">{{posts.title}}<p class="date">{{posts.created}}</p></div>
+            <div class="posts-body">{{posts.content}}</div>
+        {% endif %}
+      </div>
+      </div>
+    </body>
+<html>

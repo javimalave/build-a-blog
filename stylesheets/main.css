@@ -1,0 +1,95 @@
+
+body {
+ background:#BABABA;
+
+}
+.main {
+  width: 800px;
+  margin: -10px auto;
+  padding: 10px;
+  background:#f4f4f4;
+  min-height:800px;
+}
+h1 {
+ font-family: 'Gloria Hallelujah', cursive;
+ font-size:2.2em;
+ text-align: center;
+}
+.error {
+  color:red;
+}
+.menu{
+ text-align: center;
+ margin-left:-35px;
+}
+.menu ul li{
+ display:inline-block;
+ font-family: 'Gloria Hallelujah', cursive;
+ font-size: 2em;
+ padding-left:40px;
+}
+a {
+ color:#000;
+}
+ a:hover {
+ color: red;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-size:2em;
+}
+
+input[type=text] {
+
+  width: 400px;
+  font-size: 20px;
+  padding: 2px;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+  font-size: 17px;
+}
+
+input[type=sumbit] {
+  font-size: 24px;
+font-family: 'Indie Flower', cursive;
+}
+hr {
+  margin: 20px auto;
+}
+.content{
+ margin-left:25px;
+}
+.blog + .blog {
+  margin-top: 20px;
+}
+
+.blog-title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5em;
+}
+
+.blog-body {
+  font-family: 'Indie Flower', cursive;
+  margin: 0px;
+  font-size: 1.5em;
+
+}
+
+.blog-title p.date{
+  font-size:.5em;
+  float:right;
+}
+
+.posts-body {
+  font-family: 'Indie Flower', cursive;
+  margin: 0px;
+  padding-top: 10px;
+  border-top: 2px solid;
+  font-size: 1.5em;
+}
